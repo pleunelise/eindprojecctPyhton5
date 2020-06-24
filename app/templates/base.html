@@ -1,0 +1,20 @@
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - PlannMe</title>
+      {% else %}
+      <title>Welcome to PlannMe</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>
+            PlannMe:
+            <a href="/home">Home</a>
+            <a href="/tijdslots">Tijdslots</a>
+            <a href="/werknemers">Werknemers</a>
+            <a href="/planning">Planning</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
